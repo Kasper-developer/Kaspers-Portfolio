@@ -31,7 +31,13 @@
 	padding: 12px 25px;
 }
 
+.divider {
+	width: 60px;
+	height: 0px;
+	border: 2px solid $main-color;
+}
 
-@import 'blocks/promo';
-@import 'blocks/sidepanel';
-@import 'blocks/menu';
+@import "blocks/promo";
+@import "blocks/sidepanel";
+@import "blocks/menu";
+@import "blocks/about";

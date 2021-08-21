@@ -5,12 +5,12 @@
 	background: url("../../img/main_bg.jpg") no-repeat 50% / cover;
 	&__subtitle {
 		position: relative;
-		padding-left: 10px;
+		padding-left: 12px;
 		z-index: 1;
 		&::before {
 			content: "";
 			position: absolute;
-			top: -25%;
+			top: -29%;
 			left: 0;
 			width: 36px;
 			height: 36px;
