@@ -1,0 +1,125 @@
+.hamburger {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	width: 36px;
+	height: 21px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: flex-end;
+	cursor: pointer;
+	& span {
+		display: block;
+		width: 30px;
+		height: 3px;
+		background: #151812;
+	}
+	& .long {
+		width: 36px;
+	}
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100vh;
+	transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	left: -100%;
+	visibility: hidden;
+	opacity: 0;
+	
+	&--active {
+		left: 0;
+		visibility: visible;
+		opacity: 1              ;
+	}
+	&__body {
+		padding: 140px 0 0 40px;
+		position: relative;
+		width: 345px;
+		height: 100vh;
+		background: $main-color;
+		z-index: 3;
+	}
+
+	&__close {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		width: 29px;
+		height: 29px;
+		cursor: pointer;
+	}
+
+	&__overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background: #fff;
+		opacity: 0.75;
+		z-index: 2;
+	}
+	&-list {
+		padding-left: 35px;
+		&__item {
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&__link {
+			position: relative;
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 36px;
+			color: #ffffff;
+			text-transform: uppercase;
+			&:before {
+				content: "";
+				position: absolute;
+				top: 10px;
+				left: -35px;
+				width: 15px;
+				height: 15px;
+				border: 1px solid #000000;
+				border-radius: 100%;
+				transition: all 0.4s;
+				-webkit-transition: all 0.4s;
+				-moz-transition: all 0.4s;
+				-ms-transition: all 0.4s;
+				-o-transition: all 0.4s;
+			}
+			&:hover {
+				&::before {
+					background: #fff;
+				}
+			}
+		}
+	}
+	&-social {
+		position: absolute;
+		bottom: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		width: 90px;
+		display: flex;
+		justify-content: space-between;
+		&__link {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
