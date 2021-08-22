@@ -5,9 +5,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	hamburger.addEventListener('click', () => {
 		menu.classList.add('menu--active');
+		document.body.style.overflow = 'hidden';
 	})
 
 	closeBtn.addEventListener('click', () => {
 		menu.classList.remove('menu--active');
+		document.body.style.overflow = '';
 	})
 })
