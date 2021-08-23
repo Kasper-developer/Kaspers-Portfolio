@@ -7,20 +7,21 @@
 		position: relative;
 		padding-left: 12px;
 		z-index: 1;
+		text-align: left;
+		@include circle;
 		&::before {
-			content: "";
-			position: absolute;
 			top: -29%;
 			left: 0;
-			width: 36px;
-			height: 36px;
-			background: $main-color;
-			border-radius: 100%;
-			z-index: -1;
+			transform: translateX(0%);
+			-webkit-transform: translateX(0%);
+			-moz-transform: translateX(0%);
+			-ms-transform: translateX(0%);
+			-o-transform: translateX(0%);
 		}
 	}
 
 	&__title {
+		text-align: left;
 		width: 532px;
 		font-size: 48px;
 		margin-top: 9px;

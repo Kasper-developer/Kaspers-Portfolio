@@ -1,6 +1,7 @@
 @import "libs/reset";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 @import "base/variables";
+@import "base/mixins";
 
 * {
 	font-family: "Poppins", sans-serif;
@@ -16,12 +17,14 @@
 	font-size: 16px;
 	line-height: 24px;
 	color: #000;
+	text-align: center;
 }
 .title {
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 60px;
 	color: #000;
+	text-align: center;
 }
 
 .btn {
@@ -35,6 +38,7 @@
 	width: 60px;
 	height: 0px;
 	border: 2px solid $main-color;
+	margin: 0 auto;
 }
 
 @import "blocks/promo";
@@ -43,3 +47,5 @@
 @import "blocks/about";
 @import "blocks/resume";
 @import "blocks/skills";
+@import "blocks/portfolio";
+

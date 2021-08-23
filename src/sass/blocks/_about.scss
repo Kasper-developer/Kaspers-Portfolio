@@ -17,25 +17,27 @@
 	}
 	&-info {
 		&__subtitle {
+			text-align: left;
 			position: relative;
 			padding-left: 12px;
 			margin-bottom: 6px;
+			@include circle;
 			&::before {
-				content: "";
-				position: absolute;
 				top: -29%;
 				left: 0;
-				width: 36px;
-				height: 36px;
-				background: $main-color;
-				border-radius: 100%;
-				z-index: -1;
+				transform: rotateX(0%);
+				-webkit-transform: rotateX(0%);
+				-moz-transform: rotateX(0%);
+				-ms-transform: rotateX(0%);
+				-o-transform: rotateX(0%);
 			}
 		}
 		&__title {
+			text-align: left;
 			margin-bottom: 4px;
 		}
 		&__divider {
+			margin: 0;
 			margin-bottom: 20px;
 		}
 
