@@ -39,6 +39,7 @@
 	height: 0px;
 	border: 2px solid $main-color;
 	margin: 0 auto;
+	margin-bottom: 60px;
 }
 
 @import "blocks/promo";
@@ -48,4 +49,4 @@
 @import "blocks/resume";
 @import "blocks/skills";
 @import "blocks/portfolio";
-
+@import "blocks/price";
