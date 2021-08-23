@@ -58,8 +58,6 @@
 		grid-template-rows: repeat(2, minmax(70px, auto));
 		grid-auto-rows: minmax(70px, auto);
 		gap: 38px 45px;
-		&__item {
-		}
 
 		&__head {
 			display: flex;
