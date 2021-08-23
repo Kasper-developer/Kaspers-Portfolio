@@ -111,15 +111,16 @@
 			}
 		}
 
-		&__number {
+		&__counter {
 			font-weight: 500;
 			font-size: 14px;
 			line-height: 21px;
 			color: #000000;
 		}
 
-		&__value {
+		&__line {
 			position: relative;
+			width: 350px;
 			height: 14px;
 			background: #e8e4de;
 			border-radius: 4px;
@@ -127,12 +128,8 @@
 			-moz-border-radius: 4px;
 			-ms-border-radius: 4px;
 			-o-border-radius: 4px;
-			&:before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
+			& span {
+				display: block;
 				height: 100%;
 				background: $main-color;
 				border-radius: 4px;
