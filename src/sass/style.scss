@@ -1,47 +1,11 @@
-@import "libs/reset";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 @import "base/variables";
+@import "base/general";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import "libs/reset";
+@import "libs/aos";
 @import "base/mixins";
 
-* {
-	font-family: "Poppins", sans-serif;
-}
-
-.container {
-	max-width: 1140px;
-	margin: 0 auto;
-}
-
-.subtitle {
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 24px;
-	color: #000;
-	text-align: center;
-}
-.title {
-	font-weight: bold;
-	font-size: 36px;
-	line-height: 60px;
-	color: #000;
-	text-align: center;
-}
-
-.btn {
-	height: 45px;
-	background: $main-color;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	padding: 12px 25px;
-}
-
-.divider {
-	width: 60px;
-	height: 0px;
-	border: 2px solid $main-color;
-	margin: 0 auto;
-	margin-bottom: 60px;
-}
-
+@import "blocks/modal";
 @import "blocks/promo";
 @import "blocks/sidepanel";
 @import "blocks/menu";

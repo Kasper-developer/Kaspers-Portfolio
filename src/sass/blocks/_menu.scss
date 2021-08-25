@@ -1,5 +1,5 @@
 .hamburger {
-	position: absolute;
+	position: fixed;
 	top: 20px;
 	right: 30px;
 	width: 36px;
@@ -34,11 +34,11 @@
 	left: -100%;
 	visibility: hidden;
 	opacity: 0;
-	
+
 	&--active {
 		left: 0;
 		visibility: visible;
-		opacity: 1              ;
+		opacity: 1;
 	}
 	&__body {
 		padding: 140px 0 0 40px;

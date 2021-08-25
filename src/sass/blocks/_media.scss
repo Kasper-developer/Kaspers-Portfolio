@@ -305,7 +305,7 @@
 				grid-column: unset;
 				& textarea {
 					padding: 15px;
-					height: 100px;
+					height: 143px;
 				}
 			}
 			&__btn {
@@ -403,6 +403,14 @@
 			&__textarea {
 				& textarea {
 					height: 143px;
+				}
+			}
+			&__privacy {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				& span {
+					margin-left: 3px;
 				}
 			}
 		}

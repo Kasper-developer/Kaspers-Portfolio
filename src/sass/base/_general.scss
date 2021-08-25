@@ -1,0 +1,94 @@
+* {
+	font-family: "Poppins", sans-serif;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.subtitle {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+	text-align: center;
+}
+.title {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 60px;
+	color: #000;
+	text-align: center;
+}
+
+.btn {
+	height: 45px;
+	background: $main-color;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	padding: 12px 25px;
+}
+
+.divider {
+	width: 60px;
+	height: 0px;
+	border: 2px solid $main-color;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+
+.pageup {
+	display: none;
+	position: fixed;
+	bottom: 60px;
+	right: 60px;
+	width: 40px;
+	height: 40px;
+	z-index: 115;
+	img {
+		width: 100%;
+	}
+}
+
+label#email-error,
+label#name-error {
+	top: 48px;
+	left: 19px;
+	font-size: 15px;
+	color: red;
+}
+label#checkbox-error {
+	top: 35px;
+	left: -9px;
+	font-size: 15px;
+	color: red;
+}
+
+#thanks {
+	display: none;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block !important;
+}
+
+.hidden {
+	overflow: hidden;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 0.6s;
+}
+@keyframes fade {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 1;
+	}
+}
