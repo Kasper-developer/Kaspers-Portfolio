@@ -8,6 +8,7 @@
 	}
 	&-image {
 		& img {
+			width: 100%;
 			height: 100%;
 			object-fit: cover;
 		}
@@ -61,7 +62,7 @@
 	&-form {
 		margin-top: 30px;
 		display: grid;
-		grid-template: 45px 190px 45px / repeat(2, 280px) 219px;
+		grid-template: 45px 190px 45px / repeat(2, 280px);
 		gap: 29px 25px;
 		label {
 			display: block;
@@ -77,8 +78,12 @@
 		}
 		&__input {
 			position: relative;
-			grid-column: 1/2;
-			grid-row: 1/2;
+			&-group {
+				display: grid;
+				grid-template-columns: repeat(2, 280px);
+				grid-template-rows: auto;
+				column-gap: 25px;
+			}
 			& input {
 				width: 100%;
 				height: 100%;
@@ -92,9 +97,6 @@
 				-moz-border-radius: 2px;
 				-ms-border-radius: 2px;
 				-o-border-radius: 2px;
-			}
-			&--email {
-				grid-column: 2/3;
 			}
 		}
 
@@ -122,7 +124,7 @@
 				line-height: 21px;
 			}
 		}
-		&__policy {
+		&__privacy {
 			display: flex;
 			align-items: center;
 			span {

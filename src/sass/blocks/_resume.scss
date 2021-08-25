@@ -12,12 +12,12 @@
 
 
 	&__wrapper {
-		padding: 0 89px 0 72px;
-		display: flex;
+		padding: 0 72px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 143px;
 	}
 	&-column {
-		margin-right: 143px;
-		width: 50%;
 		display: flex;
 		flex-direction: column;
 		&__title {
@@ -70,7 +70,7 @@
 				position: absolute;
 				top: 63px;
 				left: -42px;
-				width: 42px;
+				width: 43px;
 				height: 1px;
 				background: #000;
 			}
