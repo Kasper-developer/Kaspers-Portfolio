@@ -109,7 +109,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	$("a[href = '#up']").click(function () {
 		const _href = $(this).attr("href");
-		$(".promo").animate({ scrollTop: $(_href).offset().top + "px" });
+		$("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
 		return false;
 	});
 
