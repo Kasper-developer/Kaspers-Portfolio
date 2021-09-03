@@ -100,6 +100,7 @@
 		font-size: 32px;
 	}
 	.promo {
+		background: url(../img/bg.jpg) no-repeat 39% center/cover;
 		&__title {
 			text-align: left;
 			width: 450px;
@@ -220,6 +221,7 @@
 		margin: 26px 0 20px 0;
 	}
 	.promo {
+		background: url(../img/bg.jpg) no-repeat 49% center/cover;
 		&__title {
 			text-align: left;
 			width: 350px;
@@ -322,6 +324,9 @@
 	.contacts {
 		padding-bottom: 50px;
 	}
+	.pageup {
+		right: 40px;
+	}
 }
 @media (max-width: 576px) {
 	.container {
@@ -331,7 +336,7 @@
 	.title {
 		font-size: 24px;
 		line-height: 36px;
-		margin: 26px 0 15px 0;
+		margin: 14px 0 15px 0;
 	}
 	.hamburger {
 		right: 20px;
@@ -343,7 +348,7 @@
 		}
 	}
 	.promo {
-		background: url(../img/main_bg.jpg) no-repeat 57% / cover;
+		background: url("../img/bg.jpg") no-repeat center (center/cover);
 		&__title {
 			width: 280px;
 			font-size: 26px;
@@ -414,5 +419,8 @@
 				}
 			}
 		}
+	}
+	.pageup {
+		right: 20px;
 	}
 }

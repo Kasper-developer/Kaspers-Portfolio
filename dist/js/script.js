@@ -17,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	const hamburger = document.querySelector('.hamburger'),
 		menu = document.querySelector('.menu'),
 		menuItem = document.querySelectorAll('.menu-list__item'),
+		burgerItem = document.querySelectorAll('.hamburger span'),
 		modalThanks = document.querySelector('#thanks'),
 		closeModal = document.querySelector('.modal__close'),
 		closeBtn = document.querySelector('.menu__close');
@@ -40,6 +41,38 @@ window.addEventListener('DOMContentLoaded', () => {
 			menu.classList.remove('menu--active');
 			document.body.style.overflow = '';
 		})
+	})
+
+	window.addEventListener('scroll', () => {
+		if (window.pageYOffset >= 900) {
+			burgerItem.forEach(item => {
+				item.style.background = '#000'
+			})
+		} else {
+			burgerItem.forEach(item => {
+				item.style.background = '#fff'
+			})
+		}
+	})
+
+	window.addEventListener('scroll', () => {
+		if (window.pageYOffset >= 500) {
+			document.querySelector('.sidepanel__divider').style.background = '#000'
+			document.querySelector('.sidepanel__text span').style.color = '#000'
+			document.querySelectorAll('.sidepanel svg path')[0].style.fill = '#000'
+			document.querySelectorAll('.sidepanel svg path')[1].style.fill = '#000'
+			document.querySelectorAll('.sidepanel svg path')[2].style.fill = '#000'
+			document.querySelectorAll('.sidepanel svg path')[3].style.fill = '#000'
+			document.querySelectorAll('.sidepanel svg path')[4].style.fill = '#000'
+		} else {
+			document.querySelector('.sidepanel__divider').style.background = '#fff'
+			document.querySelector('.sidepanel__text span').style.color = '#fff'
+			document.querySelectorAll('.sidepanel svg path')[0].style.fill = '#fff'
+			document.querySelectorAll('.sidepanel svg path')[1].style.fill = '#fff'
+			document.querySelectorAll('.sidepanel svg path')[2].style.fill = '#fff'
+			document.querySelectorAll('.sidepanel svg path')[3].style.fill = '#fff'
+			document.querySelectorAll('.sidepanel svg path')[4].style.fill = '#fff'
+		}
 	})
 
 	// Плавная прокрутка в меню
