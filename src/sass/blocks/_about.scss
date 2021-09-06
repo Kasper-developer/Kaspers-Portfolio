@@ -5,7 +5,7 @@
 	&__wrapper {
 		display: grid;
 		grid-template-columns: 400px 570px;
-		grid-template-rows: minmax(600px, auto);
+		grid-template-rows: minmax(400px, auto);
 		column-gap: 70px;
 	}
 
@@ -68,6 +68,9 @@
 			max-height: 23.45px;
 			padding-top: 15px;
 			margin-left: 15px;
+			& img {
+				width: 25px;
+			}
 			&::before {
 				content: "";
 				position: absolute;

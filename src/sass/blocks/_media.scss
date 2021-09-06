@@ -7,6 +7,14 @@
 	.container {
 		max-width: 960px;
 	}
+	.promo {
+		padding-top: 520px;
+   		 padding-bottom: 150px;
+		&__title {
+			font-size: 42px;
+			line-height: 50px;
+		}
+	}
 	.about {
 		&__wrapper {
 			grid-template-columns: 400px 520px;
@@ -100,13 +108,13 @@
 		font-size: 32px;
 	}
 	.promo {
-		background: url(../img/bg.jpg) no-repeat 39% center/cover;
+		background: url(../img/kasper_bg.jpg) no-repeat center (center/cover);
 		&__title {
 			text-align: left;
-			width: 450px;
-			font-size: 43px;
+			width: 400px;
+			font-size: 38px;
 			margin-top: 9px;
-			line-height: 50px;
+			line-height: 45px
 		}
 	}
 	.about {
@@ -221,7 +229,7 @@
 		margin: 26px 0 20px 0;
 	}
 	.promo {
-		background: url(../img/bg.jpg) no-repeat 49% center/cover;
+		background: url(../img/kasper_bg.jpg) no-repeat 49% center/cover;
 		&__title {
 			text-align: left;
 			width: 350px;
@@ -348,7 +356,7 @@
 		}
 	}
 	.promo {
-		background: url("../img/bg.jpg") no-repeat center (center/cover);
+		background: url("../img/kasper_bg.jpg") no-repeat center (center/cover);
 		&__title {
 			width: 280px;
 			font-size: 26px;

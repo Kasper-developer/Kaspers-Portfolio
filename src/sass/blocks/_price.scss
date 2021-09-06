@@ -1,6 +1,6 @@
 .price {
 	background: #fafafa;
-	padding-bottom: 120px;
+	padding-bottom: 110px;
 	&__subtitle {
 		position: relative;
 		margin-bottom: 31px;
@@ -12,7 +12,7 @@
 		display: grid;
 		grid-template: repeat(2, minmax(44px, auto)) / repeat(2, minmax(368px, auto));
 		justify-content: space-between;
-		row-gap: 15px;
+		row-gap: 21px;
 	}
 
 	&-item {
