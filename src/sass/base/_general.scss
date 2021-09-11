@@ -59,17 +59,19 @@ body {
 
 label#email-error,
 label#name-error {
-	top: 48px;
+	top: 47px;
 	left: 19px;
 	font-size: 15px;
 	color: red;
+	background: transparent;
 }
 label#checkbox-error {
 	top: 35px;
 	left: 30px;
 	font-size: 15px;
 	color: red;
-}
+	background: transparent;
+}	
 
 #thanks {
 	display: none;

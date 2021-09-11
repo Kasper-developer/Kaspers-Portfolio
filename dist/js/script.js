@@ -161,4 +161,16 @@ window.addEventListener('DOMContentLoaded', () => {
 		});
 		return false
 	})
+
+	const portfolioImage = document.querySelectorAll('.portfolio-item__img'),
+		portfolioBtn = document.querySelectorAll('.portfolio-item__btn');
+
+		portfolioImage.forEach((item, i) => {
+			item.addEventListener('mouseover', () => {
+				portfolioBtn[i].classList.add('portfolio-item__btn--bottom')
+			})
+			item.addEventListener('mouseout', () => {
+				portfolioBtn[i].classList.remove('portfolio-item__btn--bottom')
+			})
+		})
 })

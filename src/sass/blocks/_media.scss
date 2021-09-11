@@ -9,7 +9,7 @@
 	}
 	.promo {
 		padding-top: 520px;
-   		padding-bottom: 150px;
+		padding-bottom: 150px;
 		&__title {
 			font-size: 42px;
 			line-height: 50px;
@@ -115,13 +115,14 @@
 	}
 
 	.promo {
-		background: url(../img/kasper_bg.jpg) no-repeat center (center/cover);
+		/* 	background: url(../img/kasper_bg.jpg) no-repeat center (center/cover); */
+		background: url(../img/kasper-bg.jpg) no-repeat 70% (center/cover);
 		&__title {
 			text-align: left;
 			width: 400px;
 			font-size: 38px;
 			margin-top: 9px;
-			line-height: 45px
+			line-height: 45px;
 		}
 	}
 
@@ -237,6 +238,7 @@
 				width: 219px;
 				margin: 0 auto;
 				order: 0;
+				margin-top: 10px;
 			}
 
 			&__privacy {
@@ -250,7 +252,7 @@
 		left: 45px;
 	}
 	label#checkbox-error {
-		top: 17px;
+		top: 21px;
 	}
 }
 
@@ -266,13 +268,17 @@
 	}
 
 	.promo {
-		background: url(../img/kasper_bg.jpg) no-repeat 49% center/cover;
+		background: url(../img/kasper-bg.jpg) no-repeat 80% (center/cover);
+		/* background: url(../img/kasper_bg.jpg) no-repeat 49% center/cover; */
 		&__title {
 			text-align: left;
 			width: 350px;
 			font-size: 33px;
 			margin-top: 9px;
 			line-height: 43px;
+		}
+		&::before {
+			background: rgba(0, 0, 0, 0.4) no-repeat center center;
 		}
 	}
 
@@ -360,7 +366,7 @@
 					grid-template-columns: 1fr;
 					grid-template-rows: repeat(2, 44px);
 					column-gap: 0;
-					row-gap: 20px;
+					row-gap: 30px;
 				}
 			}
 
@@ -377,6 +383,7 @@
 				width: 219px;
 				margin: 0 auto;
 				order: 0;
+				margin-top: 10px;
 			}
 
 			&__privacy {
@@ -392,6 +399,10 @@
 
 	.pageup {
 		right: 40px;
+	}
+	label#email-error,
+	label#name-error {
+		left: 155px;
 	}
 }
 
@@ -419,7 +430,8 @@
 	}
 
 	.promo {
-		background: url("../img/kasper_bg.jpg") no-repeat center (center/cover);
+		/* background: url("../img/kasper_bg.jpg") no-repeat center (center/cover); */
+		background: url(../img/kasper-bg.jpg) no-repeat 80% (center/cover);
 		&__title {
 			width: 280px;
 			font-size: 26px;
@@ -515,6 +527,10 @@
 
 	.pageup {
 		right: 20px;
+	}
+	label#email-error,
+	label#name-error {
+		left: 3px;
 	}
 }
 

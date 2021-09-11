@@ -1,0 +1,765 @@
+
+.navbar-catalog
+	padding-top: 60px
+	padding-bottom: 58px
+
+.catalog
+	background: rgba(232, 167, 69, 0.31)
+	&__container
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		position: relative
+		padding-top: 0
+		flex-direction: column
+		justify-content: space-between
+		padding-bottom: 31px
+	&-title
+		background: #F1BE71
+		border-radius: 10px 0px
+		padding: 16px 129px 8px 149px
+		font-weight: 300
+		font-size: 25px
+		margin-bottom: 50px
+		width: 428px
+		margin-left: -12px
+	&__item
+		max-width: 220px
+		width: 20%
+		margin-right: 20px !important
+		min-height: 317.87px
+		margin-bottom: 101px !important
+		& img
+			min-height: 317.87px
+			max-width: 203px
+		&.m-0
+			width: auto
+			margin-right: 0 !important
+	&__subtitle
+		max-width: 208px
+	&__text
+		max-width: 208px
+		margin-top: 21px
+	&__price
+		max-width: 208px
+		margin-top: 6px
+	&__button
+		padding: 9px 11px 14px 74px
+		margin-top: 5px
+		width: 206px
+	&-slider
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-wrap: wrap
+		flex-direction: column
+		margin-top: -45px
+	&-heading
+		font-size: 18px
+		line-height: 22px
+		text-align: center
+		margin-left: 18px
+	&-link
+		display: flex
+		justify-content: space-
+		flex-wrap: wrap
+		align-items: center
+		margin-top: 10px
+		font-size: 30px
+		line-height: 36px
+		text-align: center
+	&__btn
+		width: 179px
+		text-decoration: none
+		color: #000
+		background: #FFD501
+		padding: 5px 15px
+		cursor: pointer
+		font-size: 22px
+	.button-home
+		position: absolute
+		bottom: 20px
+		right: 0px
+	&-link__wrapper
+		width: 96px
+		display: flex
+		justify-content: space-between
+		margin-left: 88px
+		margin-right: 14px
+	&__link
+		text-decoration: none
+		color: #000
+		&_first
+			color: #000
+		&_second
+			color: #000
+		&_third
+			color: #000
+		&:hover,&:active
+			color: #ED0707
+.btn-prew
+	border-radius: 0px 10px 10px 0px
+	position: relative
+	z-index: 1
+	margin-right: -59px
+	font-size: 30px
+	line-height: 36px
+	margin-left: 73px
+	padding-left: 0
+	&::before
+		position: absolute
+		content: url('../img/catalog/btn-arrow/btn-prew-arrow.svg')
+		right: 177px
+		z-index: 20
+		top: -2px
+.btn-next
+	border-radius: 10px 0px 0px 10px
+	position: relative
+	margin-left: 15px
+	margin-right: 50px
+	font-size: 30px
+	line-height: 36px
+	&::after
+		position: absolute
+		content: url('../img/catalog/btn-arrow/btn-next-arrow.svg')
+		left: 177px
+		z-index: 20
+		top: -5px
+.block
+	width: 100%
+	justify-content: start
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	&__item
+		margin: 0
+		padding: 0
+		margin-bottom: 90px
+		margin-right: 0
+@media screen and ( max-width: 1296px )
+	.catalog
+		.block
+			&__item:last-child
+				display: flex !important
+
+@media screen and ( max-width: 1185px )
+	.catalog
+		.block
+			&__item:last-child
+				display: none !important
+		&__wrapper
+			display: flex
+			flex-direction: row
+		&__item
+			&.m-5
+				width: 220px
+				margin-right: 20px !important
+@media screen and ( max-width: 1160px)
+	.catalog
+		&__item
+			max-width: 220px
+			width: 20%
+			margin-right: 20px !important
+			height: 317.87px
+			margin-bottom: 262px !important
+			&.m-0
+				width: 220px
+				margin-right: 0 !important
+			&.m-7
+				width: auto
+				margin: 0 !important
+@media screen and ( max-width: 992px)
+	.catalog
+		background: rgba(232, 167, 69, 0.31)
+		.block
+			&__item:last-child
+				display: flex !important
+		&-title
+			background: #F1BE71
+			border-radius: 10px 0px
+			padding: 5px 50px 3px 75px
+			font-weight: 300
+			font-size: 12px
+			margin-bottom: 42px
+			width: 220px
+			margin-left: 0px
+		&__item
+			margin-right: 50px !important
+			max-width: 130.76px !important
+			height: 196.91px
+			margin-bottom: 58px !important
+			& img
+				min-height: 196.91px
+				max-width: 130px
+			&.m-1
+				margin-right: 50px !important
+			&.m-0
+				width: auto
+				margin-right: 0 !important
+		&__subtitle
+			max-width: 208px
+		&__text
+			max-width: 208px
+			margin-top: 10px !important
+		&__price
+			max-width: 208px
+			margin-top: 2px !important
+		&__button
+			padding: 5px 0px 6px 44px
+			margin-top: 16px
+			width: 131px
+		&-slider
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-wrap: wrap
+			flex-direction: column
+			margin-top: -4px
+		&-heading
+			font-size: 14px
+			line-height: 22px
+			text-align: center
+			margin-left: 18px
+			margin-right: 16px
+		&-link
+			display: flex
+			justify-content: space-
+			flex-wrap: wrap
+			align-items: center
+			margin-top: 10px
+			font-size: 30px
+			line-height: 36px
+			text-align: center
+		&__btn
+			width: 179px
+			text-decoration: none
+			color: #000
+			background: #FFD501
+			padding: 5px 15px
+			cursor: pointer
+			font-size: 22px
+			width: 150.53px
+			height: 27.71px
+		.button-home
+			width: 45px
+			height: 41px
+			display: block
+			position: absolute
+			bottom: -62px
+			right: -50px
+		&-link__wrapper
+			width: 96px
+			display: flex
+			justify-content: space-between
+			margin-left: -7px
+			margin-right: -11px
+			font-size: 22px
+		&__link
+			text-decoration: none
+			color: #000
+			&_first
+				color: #000
+			&_second
+				color: #000
+			&_third
+				color: #000
+			&:hover,&:active
+				color: #ED0707
+		.btn-prew
+			border-radius: 0px 10px 10px 0px
+			position: relative
+			z-index: 1
+			margin-right: 53px
+			font-size: 19px
+			line-height: 17px
+			margin-left: 59px
+			padding-left: 0px
+			padding-right: 9px
+			&::before
+				position: absolute
+				content: url('../img/catalog/btn-arrow/btn-prew-arrow.svg')
+				right: 148px
+				z-index: 20
+				top: -12px
+		.btn-next
+			border-radius: 10px 0px 0px 10px
+			position: relative
+			margin-left: 49px
+			margin-right: 68px
+			font-size: 17px
+			line-height: 20px
+			&::after
+				position: absolute
+				content: url('../img/catalog/btn-arrow/btn-next-arrow.svg')
+				left: 148px
+				z-index: 20
+				top: -15px
+		.block
+			position: relative
+			width: 100%
+			justify-content: start
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			&__item
+				margin: 0
+				padding: 0
+				margin-bottom: 90px
+				margin-right: 0
+
+@media screen and ( max-width: 947px)
+	.catalog
+		background: rgba(232, 167, 69, 0.31)
+		.block
+			&__item:last-child
+				display: none !important
+		&-wrap
+			display: flex
+			flex-wrap: wrap
+			position: relative
+			padding-top: 0
+			flex-direction: column
+			justify-content: space-between
+			padding-bottom: 41px
+		&-title
+			background: #F1BE71
+			border-radius: 10px 0px
+			padding: 5px 50px 3px 75px
+			font-weight: 300
+			font-size: 12px
+			margin-bottom: 42px
+			width: 220px
+			margin-left: 0px
+		&__item
+			margin-right: 50px !important
+			max-width: 130.76px !important
+			height: 196.91px
+			margin-bottom: 58px !important
+			&.m-1
+				margin-right: 50px !important
+			&.m-0
+				width: auto
+				margin-right: 50px !important
+			&.m-b
+				margin-bottom: 58px !important
+				margin-top: 0px !important
+			&.m-6
+				display: none !important
+	.block
+		position: relative
+		width: 100%
+		justify-content: start
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&__item
+			margin: 0
+			padding: 0
+			margin-bottom: 90px
+			margin-right: 0
+@media screen and ( max-width: 920px )
+	.catalog
+		&__item
+			margin-right: 50px !important
+			max-width: 130.76px !important
+			height: 196.91px
+			margin-bottom: 61px !important
+			&.m-1
+				margin-right: 0px !important
+			&.m-6
+				display: none !important
+			&.m-b
+				margin-top: -26px !important
+@media screen and ( max-width: 768px)
+	.catalog
+		&-menu__list
+			top: 119px
+@media screen and ( max-width: 766px)
+	.navbar-catalog
+		padding-top: 20px
+		padding-bottom: 30px
+	.catalog
+		background: rgba(232, 167, 69, 0.31)
+		&-wrap
+			flex-wrap: wrap
+		.block
+			&__item:last-child
+				display: none !important
+		&__item
+			margin-right: 50px !important
+			width: 33%
+			margin-bottom: 61px !important
+			& img
+				max-width: 130.76px !important
+				height: 196.91px
+			&.m-t
+				margin-bottom: 61px !important
+			&.m-1
+				margin-right: 50px !important
+			&.m-2
+				width: auto
+				margin-right: 0 !important
+			&.m-b
+				margin-bottom: 61px !important
+				margin-top: 0px !important
+		&-menu__list
+			top: 79px
+		&__subtitle
+			max-width: 208px
+		&__text
+			max-width: 208px
+			margin-top: 10px
+		&__price
+			max-width: 208px
+			margin-top: 2px
+		&__button
+			padding: 5px 0px 6px 44px
+			margin-top: 16px
+			width: 131px
+		&-slider
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-wrap: wrap
+			flex-direction: column
+			margin-top: -4px
+		&-heading
+			font-size: 14px
+			line-height: 22px
+			text-align: center
+			margin-left: 18px
+			margin-right: 16px
+		&-link
+			display: flex
+			justify-content: space-
+			flex-wrap: wrap
+			align-items: center
+			margin-top: 10px
+			font-size: 30px
+			line-height: 36px
+			text-align: center
+		&__btn
+			width: 179px
+			text-decoration: none
+			color: #000
+			background: #FFD501
+			padding: 4px 2px
+			cursor: pointer
+			font-size: 21px
+			width: 100.53px
+			height: 23.71px
+		.button-home
+			display: none !important
+			width: 45px
+			height: 41px
+			display: block
+			position: absolute
+			bottom: -62px
+			right: -50px
+		&-link__wrapper
+			width: 96px
+			display: flex
+			justify-content: space-between
+			margin-left: -7px
+			margin-right: -11px
+			font-size: 22px
+		&__link
+			text-decoration: none
+			color: #000
+			&_first
+				color: #000
+			&_second
+				color: #000
+			&_third
+				color: #000
+			&:hover,&:active
+				color: #ED0707
+		.btn-prew
+			border-radius: 0px 10px 10px 0px
+			position: relative
+			z-index: 1
+			margin-right: 33px
+			font-size: 15px
+			line-height: 18px
+			margin-left: 66px
+			padding-left: 0px
+			padding-right: 9px
+			&::before
+				position: absolute
+				content: url('../img/catalog/btn-arrow/btn-prew-arrow.svg')
+				right: 98px
+				z-index: 11
+				top: -14px
+		.btn-next
+			border-radius: 10px 0px 0px 10px
+			position: relative
+			margin-left: 36px
+			margin-right: 57px
+			font-size: 16px
+			line-height: 17px
+			&::after
+				position: absolute
+				content: url('../img/catalog/btn-arrow/btn-next-arrow.svg')
+				left: 98px
+				z-index: 19
+				top: -18px
+		.block
+			position: relative
+			width: 100%
+			justify-content: start
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			&__item
+				margin: 0
+				padding: 0
+				margin-bottom: 90px
+				margin-right: 0
+@media screen and ( max-width: 590px)
+	.navbar-catalog
+		padding-top: 20px
+		padding-bottom: 30px
+	.catalog
+		background: rgba(232, 167, 69, 0.31)
+		&-wrap
+			flex-wrap: wrap
+		.block
+			justify-content: space-evenly
+			&__item:last-child
+				display: none !important
+		&__item
+			margin-right: 30px !important
+			width: 50%
+			margin-bottom: 61px !important
+			& img
+				max-width: 130.76px !important
+				height: 196.91px
+			&.m-t
+				margin-bottom: 61px !important
+			&.m-1
+				margin-right: 30px !important
+			&.m-2
+				width: auto
+				margin-right: 30px !important
+			&.m-n
+				display: none
+			&.m-b
+				margin-bottom: 61px !important
+				margin-top: 0px !important
+		&__subtitle
+			max-width: 208px
+		&__text
+			max-width: 208px
+			margin-top: 10px
+		&__price
+			max-width: 208px
+			margin-top: 2px
+		&__button
+			padding: 5px 0px 6px 44px
+			margin-top: 16px
+			width: 131px
+		&-slider
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-wrap: wrap
+			flex-direction: column
+			margin-top: -4px
+		&-heading
+			font-size: 14px
+			line-height: 22px
+			text-align: center
+			margin-left: 18px
+			margin-right: 16px
+		&-link
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			margin-top: 10px
+			font-size: 30px
+			line-height: 36px
+			text-align: center
+		&__btn
+			width: 179px
+			text-decoration: none
+			color: #000
+			background: #FFD501
+			padding: 4px 2px
+			cursor: pointer
+			font-size: 21px
+			width: 100.53px
+			height: 23.71px
+		.button-home
+			display: none !important
+			width: 45px
+			height: 41px
+			display: block
+			position: absolute
+			bottom: -62px
+			right: -50px
+		&-link__wrapper
+			width: 96px
+			display: flex
+			justify-content: space-between
+			margin-left: -7px
+			margin-right: -11px
+			font-size: 22px
+		&__link
+			text-decoration: none
+			color: #000
+			&_first
+				color: #000
+			&_second
+				color: #000
+			&_third
+				color: #000
+			&:hover,&:active
+				color: #ED0707
+		.btn-prew
+			border-radius: 0px 10px 10px 0px
+			position: relative
+			z-index: 1
+			margin-right: 33px
+			font-size: 15px
+			line-height: 18px
+			margin-left: 66px
+			padding-left: 0px
+			padding-right: 9px
+			&::before
+				position: absolute
+				content: url('../img/catalog/btn-arrow/btn-prew-arrow.svg')
+				right: 98px
+				z-index: 11
+				top: -14px
+		.btn-next
+			border-radius: 10px 0px 0px 10px
+			position: relative
+			margin-left: 36px
+			margin-right: 57px
+			font-size: 16px
+			line-height: 17px
+			&::after
+				position: absolute
+				content: url('../img/catalog/btn-arrow/btn-next-arrow.svg')
+				left: 98px
+				z-index: 19
+				top: -18px
+			&__item
+				margin: 0
+				padding: 0
+				margin-bottom: 90px
+				margin-right: 0
+@media screen and ( max-width: 480px )
+	.catalog
+		&-menu__list
+			top: 96px
+
+@media screen and ( max-width: 576px)
+	.catalog
+		&__item
+			margin-right: 20px !important
+			width: 50%
+			margin-bottom: 61px !important
+			& img
+				max-width: 130.76px !important
+				height: 196.91px
+			&.m-t
+				margin-bottom: 0px !important
+				margin-right: 20px !important
+			&.m-1
+				margin-right: 20px !important
+			&.m-0
+				margin-right: 20px !important
+			&.m-2
+				width: auto
+				margin-right: 20px !important
+			&.m-n
+				display: none
+			&.m-r
+				align-self: flex-end !important
+			&.m-b
+				margin-bottom: 61px !important
+				margin-top: 0px !important
+		.block
+			justify-content: space-between
+			&__item
+				&.m-3
+					margin-right: 20px !important
+		&-link__wrapper
+			justify-content: space-evenly
+			margin-left: -4px
+			margin-right: -8px
+			font-size: 20pxF
+		&__heading
+			margin-right: 21px
+		&__btn
+			width: 179px
+			text-decoration: none
+			color: #000
+			background: #FFD501
+			padding: 4px 2px
+			cursor: pointer
+			font-size: 21px
+			width: 75.53px
+			height: 22.71px
+		.btn-prew
+			border-radius: 0px 10px 10px 0px
+			position: relative
+			z-index: 1
+			margin-right: 7px
+			font-size: 13px
+			line-height: 18px
+			margin-left: 29px
+			padding-left: 0px
+			padding-right: 2px
+			&::before
+				position: absolute
+				content: url('../img/catalog/btn-arrow/btn-prew-arrow.svg')
+				right: 75px
+				z-index: 11
+				top: -14px
+		.btn-next
+			border-radius: 10px 0px 0px 10px
+			position: relative
+			margin-left: 6px
+			margin-right: 33px
+			font-size: 13px
+			line-height: 17px
+			&::after
+				position: absolute
+				content: url('../img/catalog/btn-arrow/btn-next-arrow.svg')
+				left: 73px
+				z-index: 19
+				top: -18px
+@media screen and ( max-width:440px)
+	.catalog
+		&-slider
+		&__btn
+			text-decoration: none
+			color: #000
+			padding: 5px 18px
+			cursor: pointer
+			font-size: 13px
+	.btn-prew
+		border-radius: 0px 10px 10px 0px
+		position: relative
+		z-index: 1
+		&::before
+			position: absolute
+			content: url('../img/catalog/btn-arrow/btn-prew-arrow.svg')
+			right: 100px
+			z-index: 20
+			top: -8px
+	.btn-next
+		border-radius: 10px 0px 0px 10px
+		position: relative
+		&::after
+			position: absolute
+			content: url('../img/catalog/btn-arrow/btn-next-arrow.svg')
+			left: 90px
+			z-index: 20
+			top: -11px
+		&__link
+			font-size: 15px
+	.button-home
+		width: 60px

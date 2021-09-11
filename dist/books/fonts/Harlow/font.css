@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'HarlowSolid';
+  src: url('HarlowSolid.ttf') format('truetype'),
+    url('HarlowSolid.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'harlowsi';
+  src: url('harlowsi.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

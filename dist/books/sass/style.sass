@@ -1,0 +1,1322 @@
+@font-face
+	font-family: 'HarlowSolid'
+	src: url('../fonts/Harlow/HarlowSolid.ttf') format('truetype'),url('../fonts/Harlow/HarlowSolid.woff') format('woff')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'harlowsi'
+	src: url('../fonts/Harlow/harlowsi.woff2') format('woff2')
+	font-weight: normal
+	font-style: normal
+
+body
+	font-family: Bahnschrift, sans-serif
+.container
+	position: relative
+	max-width: 1320px
+	padding: 0 10px
+	margin: auto
+
+.navbar
+	padding-top: 57px
+	padding-bottom: 91px
+	background: rgba(232, 167, 69, 0.31)
+	&-wrap
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	&__btn
+		color: #3E0784
+		font-size: 16px
+		text-decoration: none
+		background: rgba(255, 213, 0, 0.99)
+		box-shadow: 0 4px 10px rgba(0,0,0,0.3)
+		border-radius: 100px
+		padding: 7px 29px
+		&:hover
+			background: rgba(243, 204, 9, 0.945)
+			transition: all 1s ease
+	&-burger
+		display: none
+
+.logo
+	display: flex
+	align-items: center
+	margin-right: -9px
+	&__text
+		display: inline-block
+		margin-top: 5px
+		font-family: 'HarlowSolid', sans-serif !important
+		font-style: italic
+		font-weight: normal
+		font-size: 36px
+		line-height: 45px
+		color: black
+	& a
+		display: flex
+
+.menu
+	&__list
+		border: 1px solid none
+		padding: 16px 105px 16px 84px
+		background: #E09F3E
+		box-shadow: 0px 2px 10px rgba(0,0,0,0.3)
+		border-radius: 10px
+		display: flex
+		justify-content: space-around
+		align-items: center
+	&__item
+		margin-right: 80px
+		&:last-child
+			margin-right: 0
+	&__link
+		text-decoration: none
+		color: #000000
+		font-size: 14px
+		font-weight: 400
+		&:hover
+			color: #9E2A2B
+
+.butto
+	display: flex
+	align-items: center
+	margin-right: 9px
+.navbar-icon
+	align-self: center
+	margin-left: 5px
+	margin-right: 22px
+
+	/** HERO **/
+
+.hero
+	padding-bottom: 264px
+	background: rgba(232, 167, 69, 0.31)
+	&__btn
+		display: inline-block
+		color: #000000
+		text-decoration: none
+		background: #FFD501
+		border-radius: 50px
+		padding: 15px 74px 18px 87px
+		font-size: 18px
+		margin-top: 34px
+		&:hover
+			background: rgba(255, 213, 0, 0.99)
+			transition: all 1s ease-in
+
+.hero-wrap
+	display: flex
+	align-items: center
+.hero-info
+	position: relative
+	flex-basis: 50%
+	margin-right: 20px
+	&__title
+		font-family: 'Roboto Slab', sans-serif
+		font-weight: bold
+		width: 557px
+		font-size: 36px
+		line-height: 47px
+		font-weight: 400
+		margin-top: -60px
+		margin-bottom: 31px
+	&__subtitle
+		display: inline-block
+		font-size: 18px
+		line-height: 22px
+		margin-bottom: 44px
+		margin-top: -24px
+		margin-left: 4px
+	&__author
+		display: inline-block
+		position: absolute
+		bottom: 103px
+		right: 134px
+.hero-image
+	width: 100%
+/** STOCK, SALE, NEW **/
+
+.stock
+	background: rgba(232, 93, 4, 0.5)
+
+.sale
+	background: rgba(238, 134, 67, 0.9)
+
+.new
+	background: #FDD280
+
+.block
+	&-title
+		display: flex
+		justify-content: flex-start
+		align-items: center
+	&__title
+		display: inline-block
+		margin-top: -175px
+		border-radius: 10px 10px 0px 0px
+		padding: 16px 64px 13px 79px
+		font-size: 30px
+		font-weight: 500
+		width: 435px
+		line-height: 28px
+		margin-right: 44px
+		&_lighten-orange
+			padding: 16px 73px 13px 79px
+			background: rgba(232, 93, 4, 0.5)
+			text-align: center
+		&_orange
+			background: rgba(238, 134, 67, 0.8)
+			text-align: center
+			padding: 20px 71px 13px 69px
+			margin-top: -170px
+			line-height: 31px
+		&_yellow
+			background: #FDD280
+			text-align: center
+			padding: 13px 75px 13px 63px
+			margin-top: -182px
+			line-height: 31px
+	&__item
+		display: flex
+		flex-direction: column
+		&.m-0
+			margin-right: 0
+	&__img
+		width: 203px
+		height: 320px
+		margin-right: 0px
+		margin-left: 0px
+	&__subtitle
+		font-size: 19px
+		line-height: 15px
+		margin-top: 21px
+	&__text
+		font-weight: 600
+		font-size: 14px
+		margin-top: 16px
+		line-height: 17px
+	&__price
+		font-weight: 600
+		font-size: 24px
+		line-height: 29px
+		color: #F6451E
+		margin-top: 5px
+	&__button
+		text-decoration: none
+		color: #000000
+		background: #FFD501
+		border-radius: 100px
+		padding: 13px 73px
+		margin-top: -3px
+		font-size: 18px
+		line-height: 22px
+		&:hover
+			background: rgba(238, 199, 2, 0.774)
+			transition: all 0.8s linear
+	&-wrap
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+.stock-wrap, .new-wrap, .catalog-wrap
+	padding-top: 59px
+	padding-bottom: 203px
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+.sale-wrap
+	padding-top: 53px
+	padding-bottom: 194px
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+.new-wrap
+	padding-top: 62px
+	padding-bottom: 124px
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+.button-home
+	float: right
+	margin-top: -103px
+	margin-right: 10px
+
+/** Footer **/
+.footer
+	padding-top: 81px
+	padding-bottom: 100px
+	background: #A69696
+	&-wrap
+		display: flex
+		justify-content: start
+		align-items: center
+		flex-wrap: wrap
+	&-logo
+		margin-bottom: 34px
+		&__image
+			width: 44px
+			height: 31px
+		&__text
+			font-family: 'HarlowSolid', sans-serif !important
+			font-style: italic
+			font-weight: normal
+			font-size: 24px
+			line-height: 30px
+			margin-right: 127px
+			color: black
+			display: inline-block
+			margin-top: 4px
+	&__list
+		display: flex
+		justify-content: space-evenly
+	&__item
+		margin-right: 118px
+		margin-bottom: 29px
+		&:last-child
+			margin-right: 0
+	&__link
+		font-size: 16px
+		line-height: 18px
+		text-decoration: none
+		color: #000000
+		&:hover
+			color: #9E2A2B
+	&-info__phone
+		font-size: 16px
+		line-height: 19px
+		display: block
+		text-decoration: none
+		color: #000000
+		&:first-child
+			margin-bottom: 14px
+	&-copyright
+		display: inline-block
+		font-size: 16px
+		line-height: 19px
+		color: #000000
+		margin-top: 24px
+		margin-left: 439px
+
+		/** Footer-End **/
+
+@media screen and ( max-width:4000px)
+	.hero-phone-wrap
+		display: none
+	.block
+		&__item:last-child
+			margin-right: 0
+	.input
+		width: 300px
+		padding: 20px
+		border-radius: 9px
+		-webkit-box-shadow: 0px 1px 20px -5px rgba(30, 60, 80, 0.5)
+		-moz-box-shadow: 0px 1px 20px -5px rgba(30, 60, 80, 0.5)
+		box-shadow: 0px 1px 20px -5px rgba(30, 60, 80, 0.5)
+
+	.button
+		width: 172px
+		height: 46px
+		box-shadow: inset 0 -3px 0 rgba(0,0 ,0 , 0.12)
+		background: rgba(255, 213, 0, 0.99)
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+		color: #000
+		text-transform: uppercase
+		font-size: 14px
+		font-weight: 400
+		border-radius: 5px
+		&:hover
+			background: rgba(255, 213, 0, 0.99)
+	.modal
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 1050
+		display: none
+		width: 100%
+		height: 100%
+		overflow: hidden
+		background-color: rgba(0,0,0,.5)
+		&-close
+			position: absolute
+			top: 5px
+			right: 5px
+			width: 20px
+			cursor: pointer
+		&-dialog
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, 50%)
+			width: 400px
+			height: 380px
+			border-radius: 5px
+			padding: 40px
+			background: #fff
+			border-radius: 10px
+			z-index: 101
+		&-form
+			display: flex
+			flex-direction: column
+			align-items: center
+			&__name-label, &__email-label
+				font-size: 20px
+				line-height: 40px
+				font-weight: 400
+				text-transform: uppercase
+				margin-bottom: 5px
+			&__name
+				margin-bottom: 15px
+			&__email
+				margin-bottom: 30px
+			&__submit
+				width: 210px !important
+				height: 52px !important
+				padding: 17px 20px !important
+				font-size: 17px !important
+
+	.hide
+		display: none
+
+	.show
+		display: block
+
+	.fade
+		animation-name: fade
+		animation-duration: 0.7s
+
+	@keyframes fade
+		from
+			opacity: 0.1
+		to
+			opacity: 1
+
+@media screen and ( max-width:1296px)
+	.container
+		max-width: 1200px
+	.navbar
+		padding-top: 57px
+		padding-bottom: 30px
+		background: rgba(232, 167, 69, 0.31)
+		&-wrap
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+		&__btn
+			color: #3E0784
+			font-size: 16px
+			text-decoration: none
+			background: rgba(255, 213, 0, 0.99)
+			box-shadow: 0 4px 10px rgba(0,0,0,0.3)
+			border-radius: 100px
+			padding: 7px 29px
+
+			&:hover
+				background: rgba(243, 204, 9, 0.945)
+				transition: all 1s ease
+
+	.logo
+		display: flex
+		align-items: center
+		margin-right: 10px
+		&__text
+			font-family: 'HarlowSolid', sans-serif !important
+			font-style: italic
+			font-weight: normal
+			font-size: 30px
+			line-height: 45px
+
+	.menu
+		&__list
+			border: 1px solid none
+			padding: 12px 45px 12px 45px
+			background: #E09F3E
+			box-shadow: 0px 2px 10px rgba(0,0,0,0.3)
+			border-radius: 10px
+			display: flex
+			justify-content: space-around
+			align-items: center
+		&__item
+			margin-right: 43px
+			&:last-child
+				margin-right: 0
+		&__link
+			text-decoration: none
+			color: #000000
+			font-size: 14px
+			font-weight: 400
+			&:hover
+				color: #9E2A2B
+
+	.button
+		display: flex
+		align-items: center
+		margin-right: 9px
+	.navbar-icon
+		align-self: center
+		margin-left: 5px
+		margin-right: 22px
+
+	.hero
+		padding-top: 55px
+		padding-bottom: 100px
+		&-info
+			margin-right: -30px
+			flex-basis: 45%
+			&__title
+				font-family: 'Roboto Slab', sans-serif
+				margin-top: 15px
+				font-size: 32px
+			&__subtitle
+				font-size: 17px
+			&__author
+				display: inline-block
+				font-size: 13px
+				margin-right: 15px
+				top: 211px
+		&__btn
+			font-size: 16px
+			padding: 12px 60px
+		&-image
+			flex-basis: 55%
+	.block
+		&__title
+			display: inline-block
+			margin-top: -175px
+			display: flex
+			justify-content: center
+			&_orange
+				margin-top: -163px
+		&__item
+			margin-right: 0px
+			margin-bottom: 40px
+			&:last-child
+				display: none
+			&.m-0
+				margin-right: 0
+			&.m-1
+				margin-right: 0
+	.stock-wrap, .new-wrap, .catalog-wrap
+		padding-top: 59px
+		padding-bottom: 203px
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+	.sale-wrap
+		padding-top: 53px
+		padding-bottom: 194px
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+
+	.new-wrap
+		padding-top: 62px
+		padding-bottom: 124px
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+	.button-home
+		margin-right: 50px
+	.footer
+		&-wrap
+		&-logo
+			margin-right: 0px
+			&__text
+				margin-right: 70px
+		&-menu
+		&__list
+		&__item
+			margin-right: 95px
+		&-info
+		&-copyright
+			margin-left: 350px
+			/** End 1200px **/
+
+@media screen and ( max-width:992px)
+	.container
+		padding: 0 47px
+	.navbar
+		padding-top: 60px
+		padding-bottom: 30px
+		background: rgba(232, 167, 69, 0.31)
+		&-wrap
+			display: flex
+			align-items: center
+			justify-content: space-between
+		&__btn
+			color: #3E0784
+			font-size: 16px
+			text-decoration: none
+			background: rgba(255, 213, 0, 0.99)
+			box-shadow: 0 4px 10px rgba(0,0,0,0.0)
+			border-radius: 100px
+			padding: 3px 15px
+			font-size: 14px
+			line-height: 17px
+			font-weight: bold
+			&:hover
+				background: rgba(243, 204, 9, 0.945)
+				transition: all 1s ease
+	.logo
+		display: flex
+		align-items: center
+		margin-right: 0px
+		&__text
+			font-family: 'HarlowSolid', sans-serif !important
+			font-style: italic
+			font-weight: normal
+			font-size: 20px
+			line-height: 25px
+			color: black
+		&__image
+			width: 29px
+			height: 27px
+			margin-right: 10px
+	.menu
+		&__list
+			border: 1px solid none
+			padding: 9px 20px 2px 19px
+			background: #E09F3E
+			box-shadow: 0px 2px 10px rgba(0,0,0,0.0)
+			border-radius: 10px
+			display: flex
+			justify-content: space-around
+			align-items: center
+		&__item
+			margin-right: 17px
+			&:last-child
+				margin-right: 0
+		&__link
+			text-decoration: none
+			color: #000000
+			font-size: 12px
+			line-height: 14px
+			&:hover
+				color: #9E2A2B
+	.button
+		display: flex
+		align-items: center
+		margin-right: 14px
+	.navbar-icon
+		align-self: center
+		margin-left: -7px
+		margin-right: 6px
+		width: 20px
+		height: 20px
+	.hero
+		padding-top: 87px
+		padding-bottom: 38px
+		&-wrap
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+			flex-direction: column
+		&-info
+			margin-right: 0px
+			&__title
+				width: 475px
+				margin-top: -29px
+				font-size: 24px
+				line-height: 36px
+				margin-bottom: 35px
+			&__subtitle
+				font-size: 13px
+			&__author
+				font-size: 15px
+				left: 288px
+				margin-bottom: 35px
+				top: 110px
+		&__btn
+			padding: 14px 69px
+			font-size: 13px
+			margin-top: 36px
+			margin-left: 118px
+			margin-bottom: 74px
+		&-image
+			width: 606px
+			flex-basis: 100%
+			margin-bottom: 50px
+	.block
+		&__title
+			width: 346px
+			height: 39px
+			padding: 9px 40px 2px 46px
+			font-size: 18px
+			display: inline-block
+			margin-top: -179px
+			margin-left: 44px
+			display: inline-block
+			display: flex
+			justify-content: center
+			&_lighten-orange
+				padding-top: -180px
+			&_orange
+				margin-top: -183px
+				padding: 5px 45px 4px 46px
+			&_yellow
+				margin-top: -188px
+				padding: 8px 37px 4px 36px
+		&__item
+			width: 130px
+			height: 196px
+			margin-right: 0px
+			margin-bottom: 40px
+			& img
+				min-height: 197px
+			&:last-child
+				display: none
+			&.m-0
+				margin-right: 0
+			&.m-1
+				margin-right: 0
+		&__subtitle
+			font-size: 14px
+			line-height: 18px
+			margin-top: 2px
+		&__text
+			font-weight: 600
+			font-size: 14px
+			line-height: 17px
+			margin-top: 10px
+		&__price
+			font-weight: 600
+			font-size: 14px
+			line-height: 17px
+			color: #F6451E
+			margin-top: 0px
+		&__button
+			text-decoration: none
+			color: #000000
+			background: #FFD501
+			border-radius: 100px
+			padding: 5px 41px
+			margin-top: 20px
+			font-size: 14px
+			line-height: 17px
+	.stock-wrap
+		padding: 70px 0 163px 0
+		justify-content: space-between
+	.sale-wrap
+		padding: 72px 0 155px 0
+	.new-wrap
+		padding: 75px 0 158px 0
+	.button-home
+		display: none
+	.footer
+		padding: 50px 0 70px 0
+		&__list
+			flex-wrap: wrap
+			align-self: center
+			align-items: center
+			margin-bottom: 20px
+			&:last-child
+				margin-right: 0
+		&__item
+			margin-bottom: 0px
+			margin-right: 30px
+			font-size: 14px
+			line-height: 17px
+		&-logo
+			margin-bottom: 23px
+			&__image
+				width: 29px
+				height: 26px
+				margin-right: 10px
+			&__text
+				margin-right: 5px
+				font-size: 20px
+				line-height: 25px
+				margin-right: 62px
+		&-info
+			&__phone
+				font-size: 14px
+				line-height: 17px
+				margin-left: 8px
+				margin-bottom: 31px
+		&-copyright
+			font-size: 14px
+			line-height: 19px
+			display: block
+			margin-left: 201px
+			text-align: center
+
+@media screen and ( max-width:768px)
+	.container
+		padding: 0 47px
+	.navbar
+		padding-top: 20px
+		padding-bottom: 30px
+		background: rgba(232, 167, 69, 0.31)
+		&-wrap
+			display: flex
+			align-items: center
+			justify-content: space-between
+			flex-wrap: wrap
+		&__btn
+			color: #3E0784
+			font-size: 16px
+			text-decoration: none
+			background: rgba(255, 213, 0, 0.99)
+			box-shadow: 0 4px 10px rgba(0,0,0,0.0)
+			border-radius: 100px
+			padding: 3px 15px
+			font-size: 14px
+			line-height: 17px
+			font-weight: bold
+			&:hover
+				background: rgba(243, 204, 9, 0.945)
+				transition: all 1s ease
+		&-burger
+			display: block
+			position: relative
+			flex-basis: 50%
+			width: 100%
+			height: 100%
+			&.active .navbar-burger__item
+				opacity: 0
+				transition: all 0.5s
+			&.active .navbar-burger__body::before
+				transform: rotate(38deg)
+				transition: all 0.4s
+				margin-top: 8px
+			&.active .navbar-burger__body::after
+				transform: rotate(-38deg)
+				transition: all 0.4s
+				margin-bottom: 8px
+			&__wrapper
+				display: flex
+				align-items: center
+				justify-self: center
+				background: #EA9F68
+				border-radius: 10px
+				width: 85px
+				min-height: 31px
+			&__body
+				margin-right: 8px
+				&::before
+					content: ''
+					position: absolute
+					width: 26px
+					height: 1px
+					top: 7px
+					left: 0
+					background: #000
+					margin-left: 7px
+				&::after
+					content: ''
+					position: absolute
+					width: 26px
+					height: 1px
+					bottom: 7px
+					left: 0
+					background: #000
+					margin-left: 7px
+			&__item
+				width: 26px
+				height: 1px
+				background: #000
+				margin-bottom: 6px
+				margin-top: 6px
+				margin-left: 7px
+			&__text
+				font-weight: normal
+				font-size: 13px
+				line-height: 16px
+	.logo
+		display: flex
+		align-items: center
+		margin-left: 32%
+		flex-basis: 100%
+		&__text
+			font-family: 'HarlowSolid', sans-serif !important
+			font-style: italic
+			font-weight: normal
+			font-size: 20px
+			line-height: 25px
+		&__image
+			max-width: 29px
+			height: 27px
+			margin-right: 10px
+	body.lock
+		overflow: hidden
+	.menu
+		display: block
+		&__list
+			position: absolute
+			left: -100%
+			top: 79px
+			width: 155px
+			height: 255px
+			flex-direction: column
+			border: 1px solid none
+			padding: 36px 0px 34px 30px
+			background: #efbe75
+			border-radius: 2px
+			display: flex
+			align-items: flex-start
+			transition: all 0.5s
+			z-index: 99
+			&.active
+				left: 0px
+		&__item
+			margin-right: 17px
+			margin-bottom: 25px
+			&:last-child
+				margin-bottom: 0
+				margin-right: 0
+		&__link
+			text-decoration: none
+			color: #000000
+			font-size: 14px
+			line-height: 17px
+			font-weight: 500
+			&:hover
+				color: #9E2A2B
+	.button
+		display: flex
+		align-items: center
+		margin-right: 14px
+	.navbar-icon
+		align-self: center
+		margin-left: -7px
+		margin-right: 6px
+		width: 20px
+		height: 20px
+	.hero
+		padding-bottom: 40px
+		padding-top: 40px
+		&-info
+			&__title
+				line-height: 1.4
+				width: 330px
+			&__subtitle
+				font-size: 14px
+				line-height: 17px
+				width: 310px
+			&__author
+				display: inline-block
+				font-size: 14px
+				line-height: 16px
+				left: 238px
+				top: 118px
+				margin-bottom: 35px
+		&__btn
+			font-size: 13px
+			padding: 10px 90px
+			margin: 20px 0px 15px 0px
+		&-wrap
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-wrap: wrap
+		&-info
+			margin-left: 40px
+			margin-bottom: 30px
+		&-image
+			width: 90%
+			margin-bottom: 50px
+			object-fit: cover
+	.block
+		display: flex
+		justify-content: center
+		&__item
+			&.m-1
+				margin-right: 0 !important
+			&.m-2
+				margin-right: 30px
+			&.m-3
+				margin-right: 30px
+			&.m-4
+				margin-right: 30px
+	.footer
+		&-wrap
+			justify-content: space-between
+		&-logo
+			width: 29px
+			height: 27px
+			position: relative
+			left: 0
+			&__image
+				max-width: 29px
+				height: 27px
+		&-list
+			margin-left: 60px
+		&__item
+			font-size: 14px
+			line-height: 17px
+			margin-top: 5px
+			margin-right: 20px
+			margin-bottom: 10px
+@media screen and ( max-width: 703px )
+	.block
+		&__item
+			&.m-1
+				margin-right: 0 !important
+				padding-top: 65px
+			&.m-2
+				margin-right: 30px
+			&.m-3
+				margin-right: 30px
+			&.m-4
+				margin-right: 30px
+@media screen and ( max-width: 673px )
+	.block
+		&__item
+			&.m-1
+				margin-right: 0 !important
+			&.m-2
+				margin-right: 0
+			&.m-3
+				margin-right: 30px
+			&.m-4
+				margin-right: 30px
+	.footer
+		&-menu
+			width: 100%
+		&__item
+			margin-right: 14px
+		&-copyright
+			margin-top: 0
+			margin-left: 8px
+
+@media screen and ( max-width:576px)
+	.hero-wrap
+		display: none
+	.hero-phone
+		&-wrap
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-direction: column
+		&__image
+			margin-bottom: 25px
+		&__btn
+			font-size: 12px
+			padding: 10px 65px
+		&_btn
+			margin-bottom: 56px
+	.block
+		display: flex
+		justify-content: center
+		&__item
+			&.m-1
+				margin-right: 45px !important
+				padding-top: 40px
+			&.m-2
+				margin-right: 45px
+				padding-top: 40px
+			&.m-3
+				margin-right: 45px
+			&.m-4
+				margin-right: 45px
+@media screen and ( max-width: 550px )
+	.block
+		display: flex
+		justify-content: center
+		&__item
+			&.m-1
+				margin-right: 0px !important
+				padding-top: 40px
+			&.m-2
+				margin-right: 45px
+				padding-top: 40px
+			&.m-3
+				margin-right: 0px
+			&.m-4
+				margin-right: 45px
+@media screen and ( max-width: 480px)
+	.container
+		padding: 0 21px
+	.navbar
+		position: relative
+		padding-top: 20px
+		padding-bottom: 27px
+		background: rgba(232, 167, 69, 0.31)
+		&-wrap
+			display: flex
+			align-items: center
+			justify-content: space-between
+			flex-wrap: wrap
+		&__btn
+			color: #3E0784
+			font-size: 16px
+			text-decoration: none
+			background: rgba(255, 213, 0, 0.99)
+			box-shadow: 0 4px 10px rgba(0,0,0,0.0)
+			border-radius: 100px
+			padding: 3px 13px
+			font-size: 14px
+			line-height: 17px
+			font-weight: bold
+			&:hover
+				background: rgba(243, 204, 9, 0.945)
+				transition: all 1s ease
+			&__wrapper
+				display: flex
+				align-items: center
+				justify-self: center
+				background: #EA9F68
+				border-radius: 10px
+				width: 85px
+				min-height: 31px
+			&__body
+				margin-right: 8px
+			&__item
+				width: 26px
+				height: 1px
+				background: #000
+				margin-bottom: 6px
+				margin-top: 6px
+				margin-left: 7px
+				&::before
+					content: ''
+					position: absolute
+					width: 26px
+					height: 1px
+					top: 7px
+					left: 0
+					background: #000
+					margin-left: 7px
+				&::after
+					content: ''
+					position: absolute
+					width: 26px
+					height: 1px
+					bottom: 7px
+					left: 0
+					background: #000
+					margin-left: 7px
+			&__text
+				font-weight: normal
+				font-size: 13px
+				line-height: 16px
+	.logo
+		display: flex
+		align-items: center
+		margin-left: 23%
+		flex-basis: 100%
+		margin-bottom: 18px
+		&__text
+			font-family: 'HarlowSolid', sans-serif !important
+			font-style: italic
+			font-weight: normal
+			font-size: 20px
+			line-height: 25px
+		&__image
+			max-width: 29px
+			height: 27px
+			margin-right: 10px
+	.menu
+		display: block
+		&__list
+			top: 97px
+	.button
+		display: flex
+		align-items: center
+		margin-right: 1px
+	.navbar-icon
+		align-self: center
+		margin-left: -0px
+		margin-right: 7px
+		max-width: 20px
+		min-height: 20px
+		margin-bottom: 7px
+	.hero
+		padding-bottom: 0px
+		padding-top: 27px
+		&-info
+			&__title
+				font-size: 18px
+				line-height: 24px
+				width: 253px
+				margin-bottom: 22px
+				margin-left: 23px
+			&__subtitle
+				font-size: 14px
+				line-height: 17px
+				width: 295px
+				margin: 1px 0 0 -66px
+			&__author
+				display: inline-block
+				font-size: 14px
+				line-height: 16px
+				left: 170px
+				top: 30px
+				margin-bottom: 35px
+		&__btn
+			font-size: 14px
+			line-height: 17px
+			padding: 8px 47px 7px 58px
+			margin: 25px 0px 0px -12px
+		&-wrap
+			display: none
+			justify-content: center
+			align-items: center
+			flex-wrap: wrap
+		&-info
+			margin-left: 40px
+			margin-bottom: 27px
+		&-phone__image
+			max-width: 262px
+		&-image
+			max-width: 317px
+			width: 90%
+			margin-bottom: 50px
+			object-fit: cover
+			& img
+				max-width: 262px
+	.block
+		&-title
+			width: 300px
+		&__title
+			width: 346px
+			height: 29px
+			padding: 3px 32px 2px 38px
+			font-size: 14px
+			display: inline-block
+			margin-top: -106px
+			margin-left: 33px
+			margin-right: 38px
+			display: inline-block
+			display: flex
+			justify-content: center
+			&_lighten-orange
+				padding-top: -180px
+			&_orange
+				margin-top: -96px
+				padding: 0px 47px 4px 46px
+			&_yellow
+				margin: -93px 33px 0 34px
+				padding: 0px 30px 4px 29px
+		&__item
+			max-width: 125.44px
+			height: 184.25px
+			margin-right: 0px
+			margin-bottom: 141px !important
+			& img
+				min-height: 184px
+			&:last-child
+				display: none
+			&.m-1
+				margin-right: 0px !important
+				padding-top: 0px
+			&.m-2
+				margin-right: 45px
+				padding-top: 0px
+			&.m-3
+				margin-right: 0px
+			&.m-4
+				margin-right: 45px
+		&__subtitle
+			font-size: 14px
+			line-height: 18px
+			margin-top: 2px
+		&__text
+			font-weight: 600
+			font-size: 14px
+			line-height: 17px
+			margin-top: 10px
+		&__price
+			font-weight: 600
+			font-size: 14px
+			line-height: 17px
+			color: #F6451E
+			margin-top: 0px
+		&__button
+			text-decoration: none
+			color: #000000
+			background: #FFD501
+			border-radius: 100px
+			padding: 7px 41px 4px 40px
+			margin-top: 10px
+			font-size: 14px
+			line-height: 17px
+	.stock-wrap
+		padding: 39px 0 42px 0
+		justify-content: space-between
+	.sale-wrap
+		padding: 33px 0 44px 0
+	.new-wrap
+		padding: 32px 0 71px 0
+	.button-home
+		display: none
+	.footer
+		padding: 21px 0 40px 0
+		&-menu
+			order: 0
+		&-nav
+			margin-left: 9px
+		&__list
+			flex-wrap: wrap
+			align-self: center
+			align-items: center
+			margin-bottom: 20px
+			&:last-child
+				margin-right: 0
+		&__item
+			margin-bottom: 2px
+			margin-right: 18px
+			font-size: 14px
+			line-height: 17px
+		&__link
+			font-size: 14px
+			line-height: 17px
+		&-logo
+			width: 220px
+			margin-left: 60px
+			order: 1
+			margin-right: 0
+			margin-bottom: 14px
+			margin-left: 22px
+			color: black
+			&__image
+				width: 29px
+				height: 26px
+				margin-right: 10px
+			&__text
+				margin-right: 5px
+				font-size: 20px
+				line-height: 25px
+				margin-right: 62px
+				color: black
+		&-info
+			order: 3
+			&__phone
+				font-size: 14px
+				line-height: 17px
+				margin-left: 0px
+				margin-bottom: 26px
+				text-align: center
+			&:first-child
+				margin-left: 0
+				margin-bottom: 12px
+				margin-top: -3px
+		&-copyright
+			font-size: 14px
+			line-height: 19px
+			display: block
+			margin-left: 0px
+			text-align: center
+			width: 308px
+	.none
+		display: none
+
+/** Second page - Catalog**/
+
+@import 'catalog'
+
+/** Third page - Info**/
+
+@import 'info'
