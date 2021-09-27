@@ -29,6 +29,10 @@
 			grid-column: 2/4;
 			grid-row: 2/3;
 		}
+		&.horizontal-second {
+			grid-column: 1/3;
+			grid-row: 3/4;
+		}
 
 		&__link {
 			z-index: 1;
